@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Modern Product Explorer</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+
+      <header class="header">
+        <h1>Product Explorer</h1>
+
+        <p>Explore products using modern JavaScript</p>
+      </header>
+
+      <!-- Controls -->
+
+      <section class="controls">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+        </select>
+      </section>
+
+      <!-- Statistics -->
+
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Products</h3>
+
+          <p id="totalProducts">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Average Price</h3>
+
+          <p id="averagePrice">$0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Total Value</h3>
+
+          <p id="totalValue">$0</p>
+        </div>
+      </section>
+
+      <!-- Loading -->
+
+      <p id="loading">Loading products...</p>
+
+      <!-- Error -->
+
+      <p id="error"></p>
+
+      <!-- Products -->
+
+      <section id="productList" class="product-list"></section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

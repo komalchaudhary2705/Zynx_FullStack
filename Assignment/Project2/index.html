@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Task Manager</title>
+    <title>Interactive Task Manager</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -14,20 +14,24 @@
       <h1>Task Manager</h1>
 
       <!-- Form -->
-
       <form id="taskForm">
-        <input type="text" id="taskInput" placeholder="Enter your task" />
-
-        <button type="submit">Add Task</button>
+        <div class="input-group">
+          <input type="text" id="taskInput" placeholder="Enter your task..." />
+          <button type="submit">Add Task</button>
+        </div>
+        
+        <!-- Error / Success message -->
+        <p id="message"></p>
       </form>
 
-      <!-- Messages -->
+      <!-- Task header -->
+      <div class="task-header">
+        <h2>My Tasks</h2>
+        <span id="taskCount"> 0 Tasks </span>
+      </div>
 
-      <p id="message"></p>
-
-      <!-- Task List -->
-
-      <ul id="taskList"></ul>
+      <!-- Tasks will be added here -->
+      <div id="taskList"></div>
     </div>
 
     <script src="script.js"></script>

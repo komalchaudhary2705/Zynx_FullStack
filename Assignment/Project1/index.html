@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-Website</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets//style/color-1.css" />
+    <link rel="stylesheet" href="./assets/style/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
@@ -12,139 +14,591 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
-    <section class="header">
-      <!-- navbar  -->
-      <nav>
-        <h1>Komal.Dev</h1>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Resume</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
+    <!-- main container start -->
+    <div class="main-container">
+      <!-- aside -->
+      <div class="aside">
+        <div class="logo">
+          <a href=""
+            ><span>K</span>omal <br />
+            <span>K</span>alsoom</a
+          >
+        </div>
+        <div class="nav-toggler"><i class="ri-menu-line"></i></div>
+        <ul class="nav">
+          <li>
+            <a href="#home" class="active">
+              <i class="ri-home-5-fill"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <i class="ri-user-fill"></i>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              <i class="ri-list-check"></i>
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              <i class="ri-briefcase-4-fill"></i>
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <i class="ri-mail-fill"></i>
+              Contact
+            </a>
+          </li>
         </ul>
-        <i class="ri-menu-line"></i>
-      </nav>
-      <!-- hero section -->
-      <section class="hero">
-        <h1>Komal Kalsoom</h1>
-        <p>Hi! I am a Professional MERN Stack developer</p>
-        <button class="about-btn">About Me</button>
-      </section>
-      <!-- about me section -->
-      <section class="about section">
-        <h1 class="heading">About Me</h1>
-        <p class="decs">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-          adipisci?
-        </p>
-        <div class="about-content">
-          <div class="ab-left">
-            <img src="./assets/images/profile-img.jpg" alt="" />
-          </div>
-          <div class="ab-right">
-            <h2>Full Stack Developer</h2>
-            <p class="para">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Aspernatur molestiae architecto optio temporibus qui, illum
-              voluptates dignissimos iusto. Voluptate, laudantium alias! Vel
-              consequatur alias odit harum enim molestias ut maxime?
-            </p>
-            <div class="details">
-              <div class="d-left">
-                <p>Education : BSCS Year 2014 - 2018</p>
-                <p>Website : http://www.portfolio.com</p>
-                <p>Phone : 0329-0000000</p>
+      </div>
+      <!-- aside -->
+
+      <!-- main content start-->
+      <div class="main-content">
+        <!-- home section strat -->
+        <section class="home section" id="home">
+          <div class="container">
+            <div class="row padd-15">
+              <div class="home-info">
+                <h3 class="hello">
+                  Hello, my name is
+                  <span>Komal Kalsoom</span>
+                </h3>
+                <h3 class="my-profession typing">
+                  I'm a <span>MERN Stack Developer</span>
+                </h3>
+                <p>
+                  I'm a passionate Web Developer who enjoys creating modern,
+                  responsive, and user-friendly websites and web applications. I
+                  work with technologies like HTML, CSS, JavaScript, React,
+                  Node.js, Express, and MongoDB to build functional and visually
+                  appealing digital experiences. I'm always eager to learn new
+                  technologies, improve my skills, and turn creative ideas into
+                  real-world projects.
+                </p>
+                <a href="#contact" class="btn hire-me"> Hire Me </a>
               </div>
-              <div class="d-right">
-                <p>LinkedIn : http://www.linkedin.com</p>
-                <p>Github : http://githib.com</p>
+              <div class="home-img">
+                <img src="./assets/images/home-img.jpg" alt="" />
               </div>
             </div>
-            <p class="para">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-              minus repudiandae, numquam totam labore expedita. Doloribus
-              dolores odio molestias eligendi. Maiores repellendus commodi
-              fugiat, itaque porro deleniti placeat voluptatem dolorem facilis
-              nihil quaerat deserunt dolor quasi ad, nostrum doloribus, laborum
-              debitis ipsum quo consequuntur sint ex. Soluta est accusantium
-              voluptatem!
-            </p>
           </div>
-        </div>
-      </section>
-      <!-- services section -->
-      <section class="services section">
-        <h1 class="heading">Services</h1>
-        <p class="decs">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-          fugiat.
-        </p>
-        <div class="row">
-          <div class="service">
-            <i class="ri-macbook-line"></i>
-            <h1>Frontend development</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-              tempore quidem officiis nemo debitis praesentium adipisci saepe ut
-              laborum quo!
-            </p>
+        </section>
+        <!-- home section end-->
+        <!-- ABout section start -->
+        <section class="about section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>About Me</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <div class="about-text padd-15">
+                  <h3>
+                    I'm Komal Kalsoom a
+                    <span>MERN Stack Developer</span>
+                  </h3>
+
+                  <p>
+                    I'm a passionate MERN Stack Developer who enjoys building
+                    modern, responsive, and user-friendly web applications. I
+                    have experience working with HTML, CSS, JavaScript, React,
+                    Node.js, Express.js, and MongoDB to develop complete
+                    full-stack applications from frontend to backend. I enjoy
+                    transforming ideas and requirements into functional,
+                    interactive, and visually appealing web applications. I
+                    focus on writing clean, reusable, maintainable, and
+                    efficient code while following good development practices.
+                    On the frontend, I enjoy creating responsive user interfaces
+                    with HTML, CSS, JavaScript, React, and modern styling
+                    techniques. On the backend, I work with Node.js and
+                    Express.js to build RESTful APIs, handle authentication,
+                    manage application logic, and connect applications with
+                    MongoDB databases. I also have an interest in user
+                    authentication, CRUD operations, API integration, database
+                    management, responsive design, and developing secure and
+                    scalable web applications. I enjoy debugging problems,
+                    learning from challenges, and continuously improving my
+                    development skills. I'm always eager to learn new
+                    technologies and explore better ways to build reliable
+                    digital products. My goal is to grow as a full-stack
+                    developer and create web applications that provide great
+                    user experiences while solving real-world problems.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="personal-info padd-15">
+                <div class="info-item padd-15">
+                  <p>Website : <span>komalkalsoom.dev</span></p>
+                </div>
+
+                <div class="info-item padd-15">
+                  <p>Email : <span>komal@example.com</span></p>
+                </div>
+
+                <div class="info-item padd-15">
+                  <p>Degree : <span>BSCS</span></p>
+                </div>
+
+                <div class="info-item padd-15">
+                  <p>Phone : <span>+92 XXX XXXXXXX</span></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="service">
-            <i class="ri-macbook-line"></i>
-            <h1>Backend development</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-              tempore quidem officiis nemo debitis praesentium adipisci saepe ut
-              laborum quo!
-            </p>
+        </section>
+        <!-- ABout section end -->
+        <!-- services section start -->
+
+        <section class="service section" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Services</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Service Item 1 -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="ri-code-s-slash-line"></i>
+                  </div>
+                  <h4>Web Development</h4>
+                  <p>
+                    I build modern, responsive, and user-friendly websites using
+                    HTML, CSS, JavaScript, and modern web development
+                    techniques.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Service Item 2 -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="ri-reactjs-line"></i>
+                  </div>
+
+                  <h4>React Development</h4>
+
+                  <p>
+                    I create interactive and responsive frontend applications
+                    using React, reusable components, state management, and
+                    modern UI development practices.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Service Item 3 -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="ri-server-line"></i>
+                  </div>
+
+                  <h4>Backend Development</h4>
+
+                  <p>
+                    I develop backend applications and RESTful APIs using
+                    Node.js and Express.js with clean and maintainable
+                    server-side architecture.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Service Item 4 -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="ri-database-2-line"></i>
+                  </div>
+
+                  <h4>Database Development</h4>
+
+                  <p>
+                    I work with MongoDB to design, manage, and integrate
+                    databases with backend applications for reliable data
+                    storage and retrieval.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Service Item 5 -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="ri-server-line"></i>
+                  </div>
+
+                  <h4>API Development</h4>
+
+                  <p>
+                    I build and integrate REST APIs for authentication, CRUD
+                    operations, data management, and communication between
+                    frontend and backend applications.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Service Item 6 -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="ri-smartphone-line"></i>
+                  </div>
+
+                  <h4>Responsive Design</h4>
+
+                  <p>
+                    I create responsive websites that provide a smooth and
+                    consistent experience across desktops, tablets, and mobile
+                    devices.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="service">
-            <i class="ri-macbook-line"></i>
-            <h1>Full-Stack development</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-              tempore quidem officiis nemo debitis praesentium adipisci saepe ut
-              laborum quo!
-            </p>
+        </section>
+        <!-- Services Section End -->
+        <!-- Portfolio Section Start -->
+        <section class="portfolio section" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Portfolio Item 1 -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="./assets/images/home-img.jpg"
+                      alt="Portfolio Project"
+                    />
+                  </div>
+
+                  <div class="portfolio-info">
+                    <h4>MERN Stack Application</h4>
+                    <p>
+                      A full-stack web application built using React, Node.js,
+                      Express.js, and MongoDB.
+                    </p>
+
+                    <div class="portfolio-tech">
+                      <span>React</span>
+                      <span>Node.js</span>
+                      <span>MongoDB</span>
+                    </div>
+
+                    <a href="#" class="portfolio-btn">
+                      View Project
+                      <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Item 2 -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="./assets/images/home-img.jpg"
+                      alt="Portfolio Project"
+                    />
+                  </div>
+
+                  <div class="portfolio-info">
+                    <h4>Food Delivery Website</h4>
+                    <p>
+                      A responsive food ordering interface with categories,
+                      products, search, and cart functionality.
+                    </p>
+
+                    <div class="portfolio-tech">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                    </div>
+
+                    <a href="#" class="portfolio-btn">
+                      View Project
+                      <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Item 3 -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="./assets/images/home-img.jpg"
+                      alt="Portfolio Project"
+                    />
+                  </div>
+
+                  <div class="portfolio-info">
+                    <h4>Plant Shop Application</h4>
+                    <p>
+                      A responsive plant shop application with product listing,
+                      shopping cart, and Redux state management.
+                    </p>
+
+                    <div class="portfolio-tech">
+                      <span>React</span>
+                      <span>Redux</span>
+                      <span>Tailwind</span>
+                    </div>
+
+                    <a href="#" class="portfolio-btn">
+                      View Project
+                      <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Item 4 -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="./assets/images/home-img.jpg"
+                      alt="Portfolio Project"
+                    />
+                  </div>
+
+                  <div class="portfolio-info">
+                    <h4>LMS Application</h4>
+                    <p>
+                      A learning management system with authentication, courses,
+                      teachers, students, and role-based access.
+                    </p>
+
+                    <div class="portfolio-tech">
+                      <span>React</span>
+                      <span>Express</span>
+                      <span>MongoDB</span>
+                    </div>
+
+                    <a href="#" class="portfolio-btn">
+                      View Project
+                      <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Item 5 -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="./assets/images/home-img.jpg"
+                      alt="Portfolio Project"
+                    />
+                  </div>
+
+                  <div class="portfolio-info">
+                    <h4>Authentication System</h4>
+                    <p>
+                      A secure authentication system with registration, login,
+                      JWT tokens, refresh tokens, and password reset.
+                    </p>
+
+                    <div class="portfolio-tech">
+                      <span>Node.js</span>
+                      <span>JWT</span>
+                      <span>MongoDB</span>
+                    </div>
+
+                    <a href="#" class="portfolio-btn">
+                      View Project
+                      <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Item 6 -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="./assets/images/home-img.jpg"
+                      alt="Portfolio Project"
+                    />
+                  </div>
+
+                  <div class="portfolio-info">
+                    <h4>Responsive Portfolio</h4>
+                    <p>
+                      A modern responsive developer portfolio built with HTML,
+                      CSS, JavaScript, and responsive design.
+                    </p>
+
+                    <div class="portfolio-tech">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                    </div>
+
+                    <a href="#" class="portfolio-btn">
+                      View Project
+                      <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="service">
-            <i class="ri-macbook-line"></i>
-            <h1>MERN-Stack development</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-              tempore quidem officiis nemo debitis praesentium adipisci saepe ut
-              laborum quo!
-            </p>
+        </section>
+        <!-- Portfolio Section End -->
+        <!-- Contact Section Start -->
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Contact Me</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="contact-title padd-15">
+                <h3>Have You Any Questions?</h3>
+
+                <p>
+                  I'm always open to discussing new projects, creative ideas, or
+                  opportunities to be part of your team.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Contact Information -->
+
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="ri-phone-fill"></i>
+                </div>
+
+                <h4>Call Me</h4>
+                <p>+92 XXX XXXXXXX</p>
+              </div>
+
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="ri-map-pin-2-fill"></i>
+                </div>
+
+                <h4>Location</h4>
+                <p>Pakistan</p>
+              </div>
+
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="ri-mail-fill"></i>
+                </div>
+
+                <h4>Email</h4>
+                <p>komal@example.com</p>
+              </div>
+
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="ri-global-line"></i>
+                </div>
+
+                <h4>Website</h4>
+                <p>komalkalsoom.dev</p>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="row">
+              <div class="contact-form padd-15">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Name"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Your Email"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Subject"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        placeholder="Your Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-item padd-15">
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="service">
-            <i class="ri-macbook-line"></i>
-            <h1>Full-Stack development</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-              tempore quidem officiis nemo debitis praesentium adipisci saepe ut
-              laborum quo!
-            </p>
-          </div>
-          <div class="service">
-            <i class="ri-macbook-line"></i>
-            <h1>Full-Stack development</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-              tempore quidem officiis nemo debitis praesentium adipisci saepe ut
-              laborum quo!
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- footer -->
-      <footer>
-        <p>&copy; All Rights Reserve Made by Komal Kalsoom</p>
-      </footer>
-    </section>
+        </section>
+        <!-- Contact Section End -->
+      </div>
+
+      <!-- main content end -->
+    </div>
+    <!-- main container end -->
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

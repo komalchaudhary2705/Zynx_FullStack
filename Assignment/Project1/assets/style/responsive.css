@@ -1,0 +1,876 @@
+/* ==================================================
+   RESPONSIVE DESIGN
+================================================== */
+
+/* ==================================================
+   LARGE TABLET / SMALL LAPTOP
+   992px - 1199px
+================================================== */
+
+@media (max-width: 1199px) {
+
+  .aside {
+    width: 270px;
+    left: -270px;
+  }
+
+  .aside.open {
+    left: 0;
+  }
+
+  .aside .nav-toggler {
+    display: flex;
+    left: 20px;
+  }
+
+  .aside.open .nav-toggler {
+    left: 220px;
+  }
+
+  .main-content {
+    padding-left: 0;
+  }
+
+  .section {
+    padding: 60px 30px;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+
+  /* =========================
+     HOME
+  ========================= */
+
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .home .home-info,
+  .home .home-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .home .home-img {
+    order: 1;
+    margin-bottom: 40px;
+  }
+
+  .home .home-info {
+    order: 2;
+  }
+
+  .home .home-img img {
+    max-width: 300px;
+    height: 350px;
+  }
+
+  .home-info p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+
+  h3.hello {
+    font-size: 24px;
+  }
+
+  h3.hello span {
+    font-size: 28px;
+  }
+
+  h3.my-profession {
+    font-size: 26px;
+  }
+
+  /* =========================
+     SECTION TITLE
+  ========================= */
+
+  .section-title {
+    margin-bottom: 45px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  /* =========================
+     ABOUT
+  ========================= */
+
+  .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-text h3 {
+    font-size: 23px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* =========================
+     SERVICES
+  ========================= */
+
+  .service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .service-item-inner {
+    min-height: 280px;
+  }
+
+  /* =========================
+     PORTFOLIO
+  ========================= */
+
+  .portfolio-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* =========================
+     CONTACT
+  ========================= */
+
+  .contact-info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* ==================================================
+   TABLET
+   768px - 991px
+================================================== */
+
+@media (max-width: 991px) {
+
+  .section {
+    padding: 50px 25px;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+
+  /* =========================
+     SIDEBAR
+  ========================= */
+
+  .aside {
+    width: 270px;
+    left: -270px;
+  }
+
+  .aside.open {
+    left: 0;
+  }
+
+  .aside .nav-toggler {
+    display: flex;
+    left: 20px;
+    top: 20px;
+  }
+
+  .aside.open .nav-toggler {
+    left: 220px;
+  }
+
+  .main-content {
+    padding-left: 0;
+  }
+
+  /* =========================
+     SECTION TITLE
+  ========================= */
+
+  .section-title {
+    margin-bottom: 45px;
+  }
+
+  .section-title h2 {
+    font-size: 35px;
+  }
+
+  /* =========================
+     HOME
+  ========================= */
+
+  .home {
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+
+  .home .home-img img {
+    max-width: 280px;
+    height: 330px;
+  }
+
+  h3.hello {
+    font-size: 23px;
+  }
+
+  h3.hello span {
+    font-size: 27px;
+  }
+
+  h3.my-profession {
+    font-size: 25px;
+  }
+
+  .home-info p {
+    font-size: 17px;
+    max-width: 650px;
+  }
+
+  /* =========================
+     ABOUT
+  ========================= */
+
+  .about-text h3 {
+    font-size: 22px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .info-item p {
+    font-size: 15px;
+  }
+
+  /* =========================
+     SERVICES
+  ========================= */
+
+  .service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .service-item-inner {
+    padding: 25px 18px;
+    min-height: 270px;
+  }
+
+  .service-item-inner .icon {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+  }
+
+  .service-item-inner h4 {
+    font-size: 19px;
+  }
+
+  .service-item-inner p {
+    font-size: 15px;
+  }
+
+  /* =========================
+     PORTFOLIO
+  ========================= */
+
+  .portfolio-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .portfolio-item-inner img {
+    width: 100%;
+  }
+
+  /* =========================
+     CONTACT
+  ========================= */
+
+  .contact-info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .contact-title {
+    font-size: 20px;
+  }
+
+  .contact-sub-title {
+    font-size: 15px;
+  }
+
+  .contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* ==================================================
+   MOBILE
+   Below 768px
+================================================== */
+
+@media (max-width: 767px) {
+
+  .section {
+    padding: 50px 15px;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+
+  /* =========================
+     SIDEBAR
+  ========================= */
+
+  .aside {
+    width: 270px;
+    left: -270px;
+  }
+
+  .aside.open {
+    left: 0;
+  }
+
+  .aside .nav-toggler {
+    display: flex;
+    top: 15px;
+    left: 15px;
+    width: 42px;
+    height: 40px;
+  }
+
+  .aside.open .nav-toggler {
+    left: 220px;
+  }
+
+  /* =========================
+     SECTION TITLE
+  ========================= */
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  /* =========================
+     HOME
+  ========================= */
+
+  .home {
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+
+  .home .home-img {
+    margin-bottom: 30px;
+  }
+
+  .home .home-img img {
+    max-width: 250px;
+    height: 300px;
+  }
+
+  h3.hello {
+    font-size: 22px;
+  }
+
+  h3.hello span {
+    font-size: 28px;
+  }
+
+  h3.my-profession {
+    font-size: 24px;
+  }
+
+  .home-info p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  /* =========================
+     ABOUT
+  ========================= */
+
+  .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-text h3 {
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .info-item p {
+    font-size: 15px;
+  }
+
+  /* =========================
+     SERVICES
+  ========================= */
+
+  .service-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service-item-inner {
+    min-height: unset;
+    padding: 25px 20px;
+  }
+
+  .service-item-inner .icon {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .service-item-inner h4 {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .service-item-inner p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* =========================
+     PORTFOLIO
+  ========================= */
+
+  .portfolio-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .portfolio-item-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* =========================
+     CONTACT
+  ========================= */
+
+  .contact-info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .contact-title {
+    font-size: 19px;
+  }
+
+  .contact-sub-title {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .form-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* =========================
+     BUTTON
+  ========================= */
+
+  .btn {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+   Below 480px
+================================================== */
+
+@media (max-width: 480px) {
+
+  .section {
+    padding: 40px 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  /* =========================
+     SIDEBAR
+  ========================= */
+
+  .aside {
+    width: 250px;
+    left: -250px;
+  }
+
+  .aside.open {
+    left: 0;
+  }
+
+  .aside .nav-toggler {
+    left: 15px;
+    width: 40px;
+    height: 38px;
+  }
+
+  .aside.open .nav-toggler {
+    left: 205px;
+  }
+
+  .aside .logo {
+    top: 40px;
+  }
+
+  .aside .logo a {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .aside .logo a span {
+    font-size: 34px;
+  }
+
+  /* =========================
+     SECTION TITLE
+  ========================= */
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  /* =========================
+     HOME
+  ========================= */
+
+  .home {
+    padding-top: 40px;
+  }
+
+  .home .home-img img {
+    max-width: 210px;
+    height: 260px;
+  }
+
+  h3.hello {
+    font-size: 20px;
+  }
+
+  h3.hello span {
+    font-size: 25px;
+  }
+
+  h3.my-profession {
+    font-size: 21px;
+  }
+
+  .home-info p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* =========================
+     ABOUT
+  ========================= */
+
+  .about-text h3 {
+    font-size: 19px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .info-item {
+    margin-bottom: 12px;
+  }
+
+  .info-item p {
+    font-size: 14px;
+  }
+
+  /* =========================
+     SERVICES
+  ========================= */
+
+  .service-item-inner {
+    padding: 22px 15px;
+  }
+
+  .service-item-inner .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+  }
+
+  .service-item-inner h4 {
+    font-size: 18px;
+  }
+
+  .service-item-inner p {
+    font-size: 14px;
+  }
+
+  /* =========================
+     PORTFOLIO
+  ========================= */
+
+  .portfolio-item {
+    margin-bottom: 20px;
+  }
+
+  .portfolio-item-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* =========================
+     CONTACT
+  ========================= */
+
+  .contact-info-item {
+    margin-bottom: 20px;
+  }
+
+  .contact-title {
+    font-size: 18px;
+  }
+
+  .contact-sub-title {
+    font-size: 13px;
+  }
+
+  .form-item {
+    margin-bottom: 15px;
+  }
+
+  /* =========================
+     BUTTON
+  ========================= */
+
+  .btn {
+    padding: 9px 20px;
+    font-size: 14px;
+  }
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+   Below 400px
+================================================== */
+
+@media (max-width: 400px) {
+
+  .section {
+    padding: 35px 8px;
+  }
+
+  /* =========================
+     SIDEBAR
+  ========================= */
+
+  .aside {
+    width: 240px;
+    left: -240px;
+  }
+
+  .aside.open {
+    left: 0;
+  }
+
+  .aside.open .nav-toggler {
+    left: 195px;
+  }
+
+  /* =========================
+     SECTION TITLE
+  ========================= */
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  /* =========================
+     HOME
+  ========================= */
+
+  .home {
+    padding-top: 35px;
+  }
+
+  .home .home-img img {
+    max-width: 190px;
+    height: 230px;
+  }
+
+  h3.hello {
+    font-size: 18px;
+  }
+
+  h3.hello span {
+    font-size: 23px;
+  }
+
+  h3.my-profession {
+    font-size: 19px;
+  }
+
+  .home-info p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* =========================
+     ABOUT
+  ========================= */
+
+  .about-text h3 {
+    font-size: 18px;
+  }
+
+  .about-text p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .info-item p {
+    font-size: 13px;
+  }
+
+  /* =========================
+     SERVICES
+  ========================= */
+
+  .service-item-inner {
+    padding: 20px 12px;
+  }
+
+  .service-item-inner .icon {
+    width: 48px;
+    height: 48px;
+    font-size: 21px;
+  }
+
+  .service-item-inner h4 {
+    font-size: 17px;
+  }
+
+  .service-item-inner p {
+    font-size: 13px;
+  }
+
+  /* =========================
+     PORTFOLIO
+  ========================= */
+
+  .portfolio-item-inner {
+    padding: 10px;
+  }
+
+  /* =========================
+     CONTACT
+  ========================= */
+
+  .contact-title {
+    font-size: 17px;
+  }
+
+  .contact-sub-title {
+    font-size: 12px;
+  }
+
+  /* =========================
+     BUTTON
+  ========================= */
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}
