@@ -1,16 +1,7 @@
-"use strict";
-
-// Get HTML elements
-
 const productsContainer = document.getElementById("products");
-
 const searchInput = document.getElementById("search");
-
 const totalProducts = document.getElementById("total");
-
 const totalValue = document.getElementById("value");
-
-// Store products
 
 let products = [];
 
@@ -45,10 +36,6 @@ const getProducts = async () => {
     console.log(error);
   }
 };
-
-// ----------------------------------
-// Display products
-// ----------------------------------
 
 const displayProducts = (productList) => {
   if (productList.length === 0) {
@@ -85,10 +72,6 @@ const displayProducts = (productList) => {
     .join("");
 };
 
-// ----------------------------------
-// Calculate information
-// ----------------------------------
-
 const updateInfo = (productList) => {
   // Count products
 
@@ -107,10 +90,6 @@ const updateInfo = (productList) => {
   totalValue.textContent = total.toFixed(2);
 };
 
-// ----------------------------------
-// Search products
-// ----------------------------------
-
 const searchProducts = () => {
   const searchText = searchInput.value.toLowerCase().trim();
 
@@ -121,10 +100,6 @@ const searchProducts = () => {
   displayProducts(filteredProducts);
 };
 
-// ----------------------------------
-// Spread operator
-// ----------------------------------
-
 const addProduct = (newProduct) => {
   products = [...products, newProduct];
 
@@ -133,22 +108,10 @@ const addProduct = (newProduct) => {
   updateInfo(products);
 };
 
-// ----------------------------------
-// Rest operator
-// ----------------------------------
-
 const showProducts = (...items) => {
   console.log(items);
 };
 
-// ----------------------------------
-// Search event
-// ----------------------------------
-
 searchInput.addEventListener("input", searchProducts);
-
-// ----------------------------------
-// Automatically load products
-// ----------------------------------
 
 getProducts();
