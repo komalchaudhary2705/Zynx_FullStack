@@ -1,14 +1,6 @@
-// ==========================================
-// STATE
-// ==========================================
-
 let products = [];
 
 let filteredProducts = [];
-
-// ==========================================
-// DOM ELEMENTS
-// ==========================================
 
 const productList = document.getElementById("productList");
 
@@ -39,9 +31,7 @@ const API_URL = "https://dummyjson.com/products?limit=100";
 const fetchProducts = async () => {
   try {
     loading.style.display = "block";
-
     errorMessage.textContent = "";
-
     const response = await fetch(API_URL);
 
     if (!response.ok) {
