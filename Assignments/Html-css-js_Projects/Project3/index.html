@@ -1,11 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My E-Commerce Store</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My E-Commerce Store</h1>
+      <p>Modern Data-Driven Interface</p>
+    </header>
+
+    <main>
+      <!-- Search -->
+      <section class="controls">
+        <input type="text" id="search" placeholder="Search products..." />
+      </section>
+
+      <!-- Store Information -->
+      <section class="info">
+        <div>
+          <h3>Total Products</h3>
+          <p id="total">0</p>
+        </div>
+
+        <div>
+          <h3>Total Value</h3>
+          <p>$<span id="value">0</span></p>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section>
+        <h2 class="section-title">Products</h2>
+
+        <div id="products">
+          <p>Loading products...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Project 3 - Modern Data-Driven Interface</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
