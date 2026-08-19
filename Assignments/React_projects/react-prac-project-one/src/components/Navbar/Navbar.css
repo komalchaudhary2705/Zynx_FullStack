@@ -29,9 +29,6 @@
   gap: 8px;
 }
 
-.nav-links li a:hover {
-  color: #60a5fa;
-}
 
 @media (max-width: 600px) {
   .navbar {

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaShoppingCart, FaHome } from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -10,9 +9,7 @@ const Navbar = () => {
 
       <ul className="nav-links">
         <li>
-          <Link to="/">
-            <FaHome /> Home
-          </Link>
+          <Link to="/">Home</Link>
         </li>
 
         <li>
@@ -20,9 +17,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to="/cart">
-            <FaShoppingCart /> Cart
-          </Link>
+          <Link to="/">Cart</Link>
         </li>
       </ul>
     </nav>
