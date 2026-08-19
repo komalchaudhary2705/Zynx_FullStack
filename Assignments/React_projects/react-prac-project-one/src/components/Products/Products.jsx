@@ -56,7 +56,7 @@ const Products = ({ search }) => {
               </Link>
             </div>
 
-            <button className="add-card">Add Cart 🛒</button>
+            <button className="add-card">Add Cart</button>
           </div>
         ))
       )}
