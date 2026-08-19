@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Products.css";
 import { Link } from "react-router-dom";
 
-const Products = ({ search }) => {
+const Products = ({ search = "", currentPage, limit }) => {
   const [productsData, setProductsData] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -14,8 +14,16 @@ const Products = ({ search }) => {
 
         let api = "https://dummyjson.com/products";
 
-        if (search && search.trim() !== "") {
+        // Search
+        if (search.trim() !== "") {
           api = `https://dummyjson.com/products/search?q=${search}`;
+        }
+
+        // Pagination only when currentPage and limit exist
+        else if (currentPage && limit) {
+          const skip = (currentPage - 1) * limit;
+
+          api = `https://dummyjson.com/products?limit=${limit}&skip=${skip}`;
         }
 
         const response = await axios.get(api);
@@ -29,7 +37,7 @@ const Products = ({ search }) => {
     };
 
     fetchProducts();
-  }, [search]);
+  }, [search, currentPage, limit]);
 
   if (loading) {
     return <h2 className="loading">Loading Products...</h2>;
