@@ -14,7 +14,7 @@
 }
 
 .search-container input:focus {
-  border-color: #2563eb;
+  border-color: rgb(144, 91, 5);
 }
 
 @media (max-width: 600px) {
